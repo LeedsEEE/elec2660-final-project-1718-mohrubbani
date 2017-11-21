@@ -16,6 +16,8 @@
 		F9100E141FC47A7100259746 /* LeagueTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E131FC47A7100259746 /* LeagueTableTests.m */; };
 		F9100E1F1FC47A7100259746 /* LeagueTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E1E1FC47A7100259746 /* LeagueTableUITests.m */; };
 		F9100E2E1FC47B2500259746 /* LeagueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E2D1FC47B2500259746 /* LeagueTableViewController.m */; };
+		F9100E311FC4867000259746 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E301FC4867000259746 /* Teams.m */; };
+		F9100E341FC4878500259746 /* LeagueTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E331FC4878500259746 /* LeagueTableDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		F9100E201FC47A7100259746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9100E2C1FC47B2500259746 /* LeagueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueTableViewController.h; sourceTree = "<group>"; };
 		F9100E2D1FC47B2500259746 /* LeagueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueTableViewController.m; sourceTree = "<group>"; };
+		F9100E2F1FC4867000259746 /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teams.h; sourceTree = "<group>"; };
+		F9100E301FC4867000259746 /* Teams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teams.m; sourceTree = "<group>"; };
+		F9100E321FC4878500259746 /* LeagueTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueTableDataModel.h; sourceTree = "<group>"; };
+		F9100E331FC4878500259746 /* LeagueTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueTableDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				F9100E021FC47A7000259746 /* Main.storyboard */,
 				F9100E2C1FC47B2500259746 /* LeagueTableViewController.h */,
 				F9100E2D1FC47B2500259746 /* LeagueTableViewController.m */,
+				F9100E2F1FC4867000259746 /* Teams.h */,
+				F9100E321FC4878500259746 /* LeagueTableDataModel.h */,
+				F9100E331FC4878500259746 /* LeagueTableDataModel.m */,
+				F9100E301FC4867000259746 /* Teams.m */,
 				F9100E051FC47A7000259746 /* Assets.xcassets */,
 				F9100E071FC47A7000259746 /* LaunchScreen.storyboard */,
 				F9100E0A1FC47A7100259746 /* Info.plist */,
@@ -280,8 +290,10 @@
 			files = (
 				F9100E2E1FC47B2500259746 /* LeagueTableViewController.m in Sources */,
 				F9100E011FC47A7000259746 /* ViewController.m in Sources */,
+				F9100E311FC4867000259746 /* Teams.m in Sources */,
 				F9100DFE1FC47A7000259746 /* AppDelegate.m in Sources */,
 				F9100DFB1FC47A7000259746 /* main.m in Sources */,
+				F9100E341FC4878500259746 /* LeagueTableDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
