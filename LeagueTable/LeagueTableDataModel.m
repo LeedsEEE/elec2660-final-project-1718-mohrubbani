@@ -125,27 +125,75 @@
         
         self.teams = [NSMutableArray array];
         Teams *newcastle = [[Teams alloc] init];
-        newcastle.name = @"Newcastle";
+        newcastle.name = @"Newcastle United";
    /*     newcastle.rank =
         newcastle.wins =
         newcastle.draws =
         newcastle.losses =
         newcastle.points =          */
         
+        self.teams = [NSMutableArray array];
+        Teams *southampton = [[Teams alloc] init];
+        southampton.name = @"Southampton";
+   /*     southampton.rank =
+        southampton.wins =
+        southampton.draws =
+        southampton.losses =
+        southampton.points =        */
         
+        self.teams = [NSMutableArray array];
+        Teams *stoke = [[Teams alloc] init];
+        stoke.name = @"Stoke City";
+   /*     stoke.rank =
+        stoke.wins =
+        stoke.draws =
+        stoke.losses =
+        stoke.points =              */
         
+        self.teams = [NSMutableArray array];
+        Teams *swansea = [[Teams alloc] init];
+        swansea.name = @"Swansea City";
+   /*     swansea.rank =
+        swansea.wins =
+        swansea.draws =
+        swansea.losses =
+        swansea.points =            */
         
+        self.teams = [NSMutableArray array];
+        Teams *tottenham = [[Teams alloc] init];
+        tottenham.name = @"Tottenham Hotspur";
+   /*     tottenham.rank =
+        tottenham.wins =
+        tottenham.draws =
+        tottenham.losses =
+        tottenham.points =          */
         
+        self.teams = [NSMutableArray array];
+        Teams *watford = [[Teams alloc] init];
+        watford.name = @"Watford";
+   /*     watford.rank =
+        watford.wins =
+        watford.draws =
+        watford.losses =
+        watford.points =            */
         
+        self.teams = [NSMutableArray array];
+        Teams *westbrom = [[Teams alloc] init];
+        westbrom.name = @"West Bromwich Albion";
+   /*     westbrom.rank =
+        westbrom.wins =
+        westbrom.draws =
+        westbrom.losses =
+        westbrom.points =           */
         
-        
-        
-        
-        
-        
-        
-        
-        
+        self.teams = [NSMutableArray array];
+        Teams *westham = [[Teams alloc] init];
+        westham.name = @"West Ham United";
+   /*     westham.rank =
+        westham.wins =
+        westham.draws =
+        westham.losses =
+        westham.points =            */
         
         
         
