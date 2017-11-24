@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeagueTableDataModel.h"
 
 @interface LeagueTableViewController : UITableViewController
+
+@property (strong, nonatomic) LeagueTableDataModel *data;
+
 
 @end

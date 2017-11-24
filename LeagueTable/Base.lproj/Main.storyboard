@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,12 +32,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="26L-Lb-Zfe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueTableCell" id="26L-Lb-Zfe">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26L-Lb-Zfe" id="TeB-DZ-scW">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premier League Table" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aH-qU-iHN">
+                                            <frame key="frameInset" minX="94" minY="11" width="197" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-tQ-7dg">
+                                            <frame key="frameInset" minX="19" minY="11" width="39" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="eBY-dA-Kx1"/>
@@ -52,7 +69,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AL-rV-dGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="-568"/>
+            <point key="canvasLocation" x="117.59999999999999" y="-568.06596701649175"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,12 +82,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cay-Wp-2Gj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-ZI-ror">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KS-iu-SGW">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-xP-DsK">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np8-bf-4wl">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week 12 Fixture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-QF-dlC">
+                                <frame key="frameInset" minY="156" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week 11 Fixture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofi-GU-dag">
+                                <frame key="frameInset" minY="262" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week 10 Fixture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF9-kx-hi5">
+                                <frame key="frameInset" minY="373" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week 9 Fixture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKN-0K-w6S">
+                                <frame key="frameInset" minY="479" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Week 8 Fixture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGq-Ru-5j1">
+                                <frame key="frameInset" minY="593" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-vD-MvY">
+                                <frame key="frameInset" minX="318" minY="72" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="More"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Np8-bf-4wl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="5fW-R5-EwF"/>
+                            <constraint firstItem="nyY-ZI-ror" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="7kj-cS-0T4"/>
+                            <constraint firstItem="tGq-Ru-5j1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ta-ns-Vul"/>
+                            <constraint firstItem="Fut-QF-dlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8D4-OE-ebj"/>
+                            <constraint firstItem="tv1-xP-DsK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="AIi-VZ-kbJ"/>
+                            <constraint firstItem="ofi-GU-dag" firstAttribute="top" secondItem="nyY-ZI-ror" secondAttribute="bottom" constant="50" id="Asz-1C-RWW"/>
+                            <constraint firstItem="nyY-ZI-ror" firstAttribute="top" secondItem="cay-Wp-2Gj" secondAttribute="bottom" constant="90" id="DoL-9f-mZc"/>
+                            <constraint firstItem="tGq-Ru-5j1" firstAttribute="top" secondItem="Np8-bf-4wl" secondAttribute="bottom" constant="50" id="KcX-Sn-OJY"/>
+                            <constraint firstItem="cay-Wp-2Gj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="M6h-Ty-RqZ"/>
+                            <constraint firstItem="tv1-xP-DsK" firstAttribute="top" secondItem="5KS-iu-SGW" secondAttribute="bottom" constant="90" id="OGW-r6-s7h"/>
+                            <constraint firstItem="ofi-GU-dag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W9S-mo-2KJ"/>
+                            <constraint firstItem="5KS-iu-SGW" firstAttribute="top" secondItem="nyY-ZI-ror" secondAttribute="bottom" constant="90" id="dpa-Ba-Yxf"/>
+                            <constraint firstItem="yF9-kx-hi5" firstAttribute="top" secondItem="5KS-iu-SGW" secondAttribute="bottom" constant="50" id="gXk-5m-54b"/>
+                            <constraint firstItem="Np8-bf-4wl" firstAttribute="top" secondItem="tv1-xP-DsK" secondAttribute="bottom" constant="90" id="jff-X9-bAo"/>
+                            <constraint firstItem="PKN-0K-w6S" firstAttribute="top" secondItem="tv1-xP-DsK" secondAttribute="bottom" constant="50" id="kZl-lr-lIF"/>
+                            <constraint firstItem="PKN-0K-w6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o58-Ne-BBF"/>
+                            <constraint firstItem="Fut-QF-dlC" firstAttribute="top" secondItem="cay-Wp-2Gj" secondAttribute="bottom" constant="50" id="pm6-hc-E9p"/>
+                            <constraint firstItem="yF9-kx-hi5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMU-nZ-KjP"/>
+                            <constraint firstItem="5KS-iu-SGW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="xRF-pM-g3Y"/>
+                            <constraint firstItem="cay-Wp-2Gj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="xSA-UA-1oW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DateLabel" destination="cay-Wp-2Gj" id="0dT-Ll-UTe"/>
+                        <outlet property="DateLabel2" destination="nyY-ZI-ror" id="uVg-fR-IOu"/>
+                        <outlet property="DateLabel3" destination="5KS-iu-SGW" id="gfS-Q2-a7e"/>
+                        <outlet property="DateLabel4" destination="tv1-xP-DsK" id="els-NN-dld"/>
+                        <outlet property="DateLabel5" destination="Np8-bf-4wl" id="vmH-f1-drP"/>
+                        <outlet property="FixtureLabel1" destination="Fut-QF-dlC" id="cDu-Wj-h1M"/>
+                        <outlet property="FixtureLabel2" destination="ofi-GU-dag" id="oz6-EK-5Os"/>
+                        <outlet property="FixtureLabel3" destination="yF9-kx-hi5" id="gsE-pe-Gvv"/>
+                        <outlet property="FixtureLabel4" destination="PKN-0K-w6S" id="2bg-t6-vkM"/>
+                        <outlet property="FixtureLabel5" destination="tGq-Ru-5j1" id="cOZ-Ve-aeA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="-568"/>
+            <point key="canvasLocation" x="996" y="-568.06596701649175"/>
         </scene>
     </scenes>
 </document>

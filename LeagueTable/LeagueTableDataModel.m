@@ -196,6 +196,26 @@
         westham.points =            */
         
         
+        [self.teams addObject:AFCbournemouth];
+        [self.teams addObject:arsenal];
+        [self.teams addObject:brighton];
+        [self.teams addObject:burnley];
+        [self.teams addObject:chelsea];
+        [self.teams addObject:palace];
+        [self.teams addObject:everton];
+        [self.teams addObject:huddersfield];
+        [self.teams addObject:leicester];
+        [self.teams addObject:liverpool];
+        [self.teams addObject:city];
+        [self.teams addObject:united];
+        [self.teams addObject:newcastle];
+        [self.teams addObject:southampton];
+        [self.teams addObject:stoke];
+        [self.teams addObject:swansea];
+        [self.teams addObject:tottenham];
+        [self.teams addObject:watford];
+        [self.teams addObject:westbrom];
+        [self.teams addObject:westham];
         
         
         
