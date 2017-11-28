@@ -117,9 +117,9 @@
 				F9100E021FC47A7000259746 /* Main.storyboard */,
 				F9100E2C1FC47B2500259746 /* LeagueTableViewController.h */,
 				F9100E2D1FC47B2500259746 /* LeagueTableViewController.m */,
-				F9100E2F1FC4867000259746 /* Teams.h */,
 				F9100E321FC4878500259746 /* LeagueTableDataModel.h */,
 				F9100E331FC4878500259746 /* LeagueTableDataModel.m */,
+				F9100E2F1FC4867000259746 /* Teams.h */,
 				F9100E301FC4867000259746 /* Teams.m */,
 				F9100E051FC47A7000259746 /* Assets.xcassets */,
 				F9100E071FC47A7000259746 /* LaunchScreen.storyboard */,
@@ -525,6 +525,7 @@
 				F9100E251FC47A7100259746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9100E261FC47A7100259746 /* Build configuration list for PBXNativeTarget "LeagueTableTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +534,7 @@
 				F9100E281FC47A7100259746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9100E291FC47A7100259746 /* Build configuration list for PBXNativeTarget "LeagueTableUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +543,7 @@
 				F9100E2B1FC47A7100259746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -57,6 +57,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.65568329020000005" green="0.098426295999999996" blue="0.57730344700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0E9-Xs-ReU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -182,7 +185,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DateLabel" destination="cay-Wp-2Gj" id="0dT-Ll-UTe"/>
                         <outlet property="DateLabel1" destination="cay-Wp-2Gj" id="5Xf-lW-zsI"/>
                         <outlet property="DateLabel2" destination="nyY-ZI-ror" id="uVg-fR-IOu"/>
                         <outlet property="DateLabel3" destination="5KS-iu-SGW" id="gfS-Q2-a7e"/>
