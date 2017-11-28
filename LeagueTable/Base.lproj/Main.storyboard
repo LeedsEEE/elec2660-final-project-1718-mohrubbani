@@ -11,7 +11,7 @@
         <scene sceneID="5dH-C0-5VB">
             <objects>
                 <navigationController id="SNM-Ah-H3K" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dWr-ea-ptp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dWr-ea-ptp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -23,53 +23,66 @@
             </objects>
             <point key="canvasLocation" x="-812" y="-568"/>
         </scene>
-        <!--League Table View Controller-->
+        <!--Premier League Table-->
         <scene sceneID="VRK-Cb-ZJz">
             <objects>
                 <tableViewController id="0T0-C8-hP7" customClass="LeagueTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dPA-El-WXy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.65568329015544036" green="0.098426296004480385" blue="0.57730344701164149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueTableCell" id="26L-Lb-Zfe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueTableCell" textLabel="U8Z-LA-NDS" detailTextLabel="SCU-3Y-1YI" style="IBUITableViewCellStyleValue2" id="26L-Lb-Zfe">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26L-Lb-Zfe" id="TeB-DZ-scW">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premier League Table" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aH-qU-iHN">
-                                            <frame key="frameInset" minX="94" minY="11" width="197" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U8Z-LA-NDS">
+                                            <frame key="frameInset" minX="15" minY="13" width="91" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.65568329020000005" green="0.098426295999999996" blue="0.57730344700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-tQ-7dg">
-                                            <frame key="frameInset" minX="19" minY="11" width="39" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Premier League Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SCU-3Y-1YI">
+                                            <frame key="frameInset" minX="112" minY="13" width="149" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.88488348822945595" green="0.89304315476190477" blue="0.37347481629918183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="eBY-dA-Kx1"/>
-                                </connections>
+                                <color key="backgroundColor" red="0.65568329020000005" green="0.098426295999999996" blue="0.57730344700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0T0-C8-hP7" id="wO9-rc-44I"/>
-                            <outlet property="delegate" destination="0T0-C8-hP7" id="YQy-Zf-6Xf"/>
-                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jQi-hi-KPB"/>
+                    <navigationItem key="navigationItem" title="Premier League Table" id="jQi-hi-KPB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AL-rV-dGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="-568.06596701649175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mnT-EJ-MMo">
+            <objects>
+                <viewController id="N1x-6R-DEY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NFT-zN-NKz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xjx-Xk-7RT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yqB-F8-AAX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aE-hg-x5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="-568"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -170,6 +183,7 @@
                     </view>
                     <connections>
                         <outlet property="DateLabel" destination="cay-Wp-2Gj" id="0dT-Ll-UTe"/>
+                        <outlet property="DateLabel1" destination="cay-Wp-2Gj" id="5Xf-lW-zsI"/>
                         <outlet property="DateLabel2" destination="nyY-ZI-ror" id="uVg-fR-IOu"/>
                         <outlet property="DateLabel3" destination="5KS-iu-SGW" id="gfS-Q2-a7e"/>
                         <outlet property="DateLabel4" destination="tv1-xP-DsK" id="els-NN-dld"/>

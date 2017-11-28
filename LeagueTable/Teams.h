@@ -17,4 +17,6 @@
 @property NSInteger *losses;
 @property NSInteger *points;
 
+
+
 @end

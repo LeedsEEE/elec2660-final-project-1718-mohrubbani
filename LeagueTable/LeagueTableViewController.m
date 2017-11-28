@@ -48,10 +48,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagueTableCell" forIndexPath:indexPath];
     
+   // NSArray *sorted = [[[Teams sortedArrayUsingSelector:@selector(rank)(compare:)]];
+    
     if (indexPath.section == 0) {
         Teams *tempTeams = [self.data.teams objectAtIndex:indexPath.row];
         
-        cell.textLabel.text = tempTeams.name;
+        
+        cell.textLabel.text= [NSString stringWithFormat:@"%ld",tempTeams.rank];
+        cell.detailTextLabel.text = tempTeams.name;
+        
         
         
  
