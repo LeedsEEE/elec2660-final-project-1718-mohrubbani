@@ -10,25 +10,27 @@
 
 @interface LeagueTableViewController ()
 
+
+
 @end
 
 @implementation LeagueTableViewController
+- (IBAction)startEditing:(id)sender {
+    
+    self.editing = YES;
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+  
+   
     
-   /* [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"GEThttps://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        NSLog(@"response %@", response);
-        
-        NSLog(@"data %@", data);
-        
-        
-        
-        
-    }] resume];
+   
 
-    */
+    
 
     
     self.data = [[LeagueTableDataModel alloc] init];
@@ -57,15 +59,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-
-    return 20;
+    NSInteger numberofRows;
+    
+    if (section ==0) {
+        numberofRows = self.data.teams.count;
+        
+    }
+    return numberofRows;
+    
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagueTableCell" forIndexPath:indexPath];
     
-   // NSArray *sorted = [[[Teams sortedArrayUsingSelector:@selector(rank)(compare:)]];
+   
     
     if (indexPath.section == 0) {
         Teams *tempTeams = [self.data.teams objectAtIndex:indexPath.row];
@@ -85,6 +93,9 @@
 }
 
 
+
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -93,35 +104,46 @@
 }
 */
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+    // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/* Override to support rearranging the table view.
+
+
+
+
+
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    
  
-}
-*/
+    
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
+ 
+
+}
+
+
+
+
+-(BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
     return YES;
 }
-*/
 
-/*
+
 #pragma mark - Navigation
 
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
