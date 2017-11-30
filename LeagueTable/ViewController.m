@@ -25,5 +25,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"GEThttps://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+      
+        
+        NSLog(@"response %@", response);
+        
+        NSLog(@"data %@", data);
+        
+        
+        
+        
+    }] resume];
+}
 
 @end

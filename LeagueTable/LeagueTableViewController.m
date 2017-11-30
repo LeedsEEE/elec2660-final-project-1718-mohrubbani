@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   /* [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"GEThttps://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        NSLog(@"response %@", response);
+        
+        NSLog(@"data %@", data);
+        
+        
+        
+        
+    }] resume];
+
+    */
+
+    
     self.data = [[LeagueTableDataModel alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -31,6 +45,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+  
+    
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
