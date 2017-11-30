@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController 
 
 @property (weak, nonatomic) IBOutlet UILabel *DateLabel1;
 @property (weak, nonatomic) IBOutlet UILabel *DateLabel2;

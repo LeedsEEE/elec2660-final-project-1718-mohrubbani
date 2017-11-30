@@ -19,7 +19,6 @@
 		F9100E311FC4867000259746 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E301FC4867000259746 /* Teams.m */; };
 		F9100E341FC4878500259746 /* LeagueTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E331FC4878500259746 /* LeagueTableDataModel.m */; };
 		F9EE1A2B1FD024C800B5F502 /* libUnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EE1A281FD024BE00B5F502 /* libUnirest.a */; };
-		F9EE1A2D1FD0271A00B5F502 /* unirest-obj-c-master in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EE1A2C1FD0271A00B5F502 /* unirest-obj-c-master */; };
 		F9F974531FCF277B00979296 /* LiveFootballAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F974521FCF277B00979296 /* LiveFootballAPI.m */; };
 /* End PBXBuildFile section */
 
@@ -89,7 +88,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9EE1A2B1FD024C800B5F502 /* libUnirest.a in Frameworks */,
-				F9EE1A2D1FD0271A00B5F502 /* unirest-obj-c-master in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

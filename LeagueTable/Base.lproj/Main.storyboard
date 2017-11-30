@@ -11,7 +11,7 @@
         <scene sceneID="5dH-C0-5VB">
             <objects>
                 <navigationController id="SNM-Ah-H3K" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dWr-ea-ptp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dWr-ea-ptp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -36,11 +36,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="26L-Lb-Zfe" id="TeB-DZ-scW">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U8Z-LA-NDS">
-                                            <frame key="frameInset" minX="15" minY="13" width="91" height="18"/>
+                                            <frame key="frameInset" minX="16" minY="13" width="91" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.65568329020000005" green="0.098426295999999996" blue="0.57730344700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -48,7 +48,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Premier League Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SCU-3Y-1YI">
-                                            <frame key="frameInset" minX="112" minY="13" width="149" height="18"/>
+                                            <frame key="frameInset" minX="113" minY="13" width="148.5" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.88488348822945595" green="0.89304315476190477" blue="0.37347481629918183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
