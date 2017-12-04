@@ -19,7 +19,6 @@
 		F9100E311FC4867000259746 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E301FC4867000259746 /* Teams.m */; };
 		F9100E341FC4878500259746 /* LeagueTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E331FC4878500259746 /* LeagueTableDataModel.m */; };
 		F988CCBD1FD188DF00E28E20 /* second.m in Sources */ = {isa = PBXBuildFile; fileRef = F988CCBC1FD188DF00E28E20 /* second.m */; };
-		F99484FF1FD573F800F038E5 /* unirest-obj-c-master in Resources */ = {isa = PBXBuildFile; fileRef = F99484FE1FD573F800F038E5 /* unirest-obj-c-master */; };
 		F9F974531FCF277B00979296 /* LiveFootballAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F974521FCF277B00979296 /* LiveFootballAPI.m */; };
 /* End PBXBuildFile section */
 
@@ -37,20 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F9100DF51FC47A7000259746;
 			remoteInfo = LeagueTable;
-		};
-		F9EE1A271FD024BE00B5F502 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9EE1A221FD024BE00B5F502 /* Unirest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A9E78BA916E9801F006B80FD;
-			remoteInfo = Unirest;
-		};
-		F9EE1A291FD024BE00B5F502 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9EE1A221FD024BE00B5F502 /* Unirest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A9E78BBA16E9801F006B80FD;
-			remoteInfo = UnirestTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -77,11 +62,9 @@
 		F9100E301FC4867000259746 /* Teams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teams.m; sourceTree = "<group>"; };
 		F9100E321FC4878500259746 /* LeagueTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueTableDataModel.h; sourceTree = "<group>"; };
 		F9100E331FC4878500259746 /* LeagueTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueTableDataModel.m; sourceTree = "<group>"; };
+		F98702751FD5CD2200CAEDCA /* unirest-obj-c-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "unirest-obj-c-master"; sourceTree = "<group>"; };
 		F988CCBB1FD188DF00E28E20 /* second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = second.h; sourceTree = "<group>"; };
 		F988CCBC1FD188DF00E28E20 /* second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = second.m; sourceTree = "<group>"; };
-		F99484FE1FD573F800F038E5 /* unirest-obj-c-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "unirest-obj-c-master"; sourceTree = "<group>"; };
-		F9EE1A221FD024BE00B5F502 /* Unirest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Unirest.xcodeproj; path = "LeagueTable/unirest-obj-c-master/Unirest.xcodeproj"; sourceTree = "<group>"; };
-		F9EE1A2C1FD0271A00B5F502 /* unirest-obj-c-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "unirest-obj-c-master"; path = "../../Downloads/unirest-obj-c-master"; sourceTree = "<group>"; };
 		F9F974511FCF277B00979296 /* LiveFootballAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveFootballAPI.h; sourceTree = "<group>"; };
 		F9F974521FCF277B00979296 /* LiveFootballAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveFootballAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +97,6 @@
 		F9100DED1FC47A7000259746 = {
 			isa = PBXGroup;
 			children = (
-				F99484FE1FD573F800F038E5 /* unirest-obj-c-master */,
 				F9100DF81FC47A7000259746 /* LeagueTable */,
 				F9100E121FC47A7100259746 /* LeagueTableTests */,
 				F9100E1D1FC47A7100259746 /* LeagueTableUITests */,
@@ -188,19 +170,9 @@
 		F9EE1A211FD024BD00B5F502 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9EE1A2C1FD0271A00B5F502 /* unirest-obj-c-master */,
-				F9EE1A221FD024BE00B5F502 /* Unirest.xcodeproj */,
+				F98702751FD5CD2200CAEDCA /* unirest-obj-c-master */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F9EE1A231FD024BE00B5F502 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F9EE1A281FD024BE00B5F502 /* libUnirest.a */,
-				F9EE1A2A1FD024BE00B5F502 /* UnirestTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +267,6 @@
 			mainGroup = F9100DED1FC47A7000259746;
 			productRefGroup = F9100DF71FC47A7000259746 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F9EE1A231FD024BE00B5F502 /* Products */;
-					ProjectRef = F9EE1A221FD024BE00B5F502 /* Unirest.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F9100DF51FC47A7000259746 /* LeagueTable */,
@@ -310,23 +276,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		F9EE1A281FD024BE00B5F502 /* libUnirest.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libUnirest.a;
-			remoteRef = F9EE1A271FD024BE00B5F502 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F9EE1A2A1FD024BE00B5F502 /* UnirestTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnirestTests.octest;
-			remoteRef = F9EE1A291FD024BE00B5F502 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		F9100DF41FC47A7000259746 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -335,7 +284,6 @@
 				F9100E091FC47A7000259746 /* LaunchScreen.storyboard in Resources */,
 				F9100E061FC47A7000259746 /* Assets.xcassets in Resources */,
 				F9100E041FC47A7000259746 /* Main.storyboard in Resources */,
-				F99484FF1FD573F800F038E5 /* unirest-obj-c-master in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,8 @@
 @end
 
 @implementation LeagueTableViewController
+
+
 - (IBAction)startEditing:(id)sender {
     
     self.editing = YES;
@@ -77,8 +79,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagueTableCell" forIndexPath:indexPath];
+ /*
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank"
+                                                 ascending:YES];
     
-   
+- (instancetype)initWithKey:("rank" *)key
+ascending:(BOOL)ascending;
+    
+    NSArray *sortedTeams = [Teams sortedArrayUsingDescriptors:@[sortDescriptor]];
+    
+    
+   */
     
     if (indexPath.section == 0) {
         Teams *tempTeams = [self.data.teams objectAtIndex:indexPath.row];

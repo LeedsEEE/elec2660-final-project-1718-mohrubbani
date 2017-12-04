@@ -7,6 +7,7 @@
 //
 
 #import "LeagueTableDataModel.h"
+#import "LiveFootballAPI.h"
 
 @implementation LeagueTableDataModel
 
@@ -16,9 +17,22 @@
     if (self) {
         
         
+        LiveFootballAPI *liveData = [[LiveFootballAPI alloc] init];
+        [liveData GetLiveData];
+        while([liveData teamData] == NULL){
+            
+        }
+//        NSLog(@"DATA FOUND: %@", [liveData teamData]);
+        NSDictionary *data = [liveData teamData];
+        NSArray *records = [data objectForKey:@"records"];
         
+     //   [records objectAtIndex:<#(NSUInteger)#>]
         
-        
+        for(NSDictionary *d in records){
+            
+            NSLog(@"RECORDS OF: %@, WITH POINTS %@", [d objectForKey:@"team"], [d objectForKey:@"points"]);
+        }
+    
         
         
         

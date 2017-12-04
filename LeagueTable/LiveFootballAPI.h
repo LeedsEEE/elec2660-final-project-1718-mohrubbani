@@ -10,4 +10,8 @@
 
 @interface LiveFootballAPI : NSObject
 
+@property (strong, nonatomic) NSDictionary *teamData;
+
+-(void)GetLiveData;
+
 @end
