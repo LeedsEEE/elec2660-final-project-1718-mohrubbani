@@ -18,8 +18,13 @@
 - (IBAction)startEditing:(id)sender {
     
     self.editing = YES;
+    
 }
 
+- (IBAction)stopEditing:(id)sender {
+    
+    self.editing = NO;
+}
 
 
 - (void)viewDidLoad {
@@ -123,7 +128,7 @@
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
     
  
-    
+  
 
  
 

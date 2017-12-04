@@ -64,6 +64,17 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Premier League Table " id="jQi-hi-KPB">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="4z0-o6-Fe6">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h5C-cl-UJh">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="startEditing:" destination="0T0-C8-hP7" eventType="touchUpInside" id="ScC-Lv-fIX"/>
+                                    <action selector="stopEditing:" destination="0T0-C8-hP7" eventType="touchUpInside" id="WLa-7J-iR6"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="zxX-Fn-tHa">
                             <connections>
                                 <action selector="startEditing:" destination="0T0-C8-hP7" id="mBA-5B-ZNL"/>
