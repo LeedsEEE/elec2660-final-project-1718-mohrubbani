@@ -142,6 +142,12 @@
                                 <color key="textColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 - 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M99-qK-abr">
+                                <frame key="frameInset" minX="150" minY="112" width="74" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1 - 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBX-BX-Z73">
                                 <frame key="frameInset" minX="150" minY="329" width="74" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -160,12 +166,16 @@
                                 <color key="textColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 - 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M99-qK-abr">
-                                <frame key="frameInset" minX="150" minY="112" width="74" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYi-Nx-oFv">
+                                <frame key="frameInset" minX="237" minY="72" width="122" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View Squad &gt;&gt;">
+                                    <color key="titleColor" red="0.88488348819999996" green="0.89304315479999996" blue="0.37347481630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fvB-b6-yoq" kind="show" id="F19-1T-Eit"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23195879999999999" green="0.65798909510000003" blue="0.79256395729999995" alpha="0.74983494719999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.40000000000000002"/>
@@ -192,9 +202,11 @@
                             <constraint firstItem="Np8-bf-4wl" firstAttribute="top" secondItem="tv1-xP-DsK" secondAttribute="bottom" constant="90" id="jff-X9-bAo"/>
                             <constraint firstItem="PKN-0K-w6S" firstAttribute="top" secondItem="tv1-xP-DsK" secondAttribute="bottom" constant="50" id="kZl-lr-lIF"/>
                             <constraint firstItem="tGq-Ru-5j1" firstAttribute="top" secondItem="78l-zF-bsQ" secondAttribute="bottom" constant="8" id="m3L-Hk-XoC"/>
+                            <constraint firstItem="xYi-Nx-oFv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="n2B-Wn-Svm"/>
                             <constraint firstItem="PKN-0K-w6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o58-Ne-BBF"/>
                             <constraint firstItem="gHP-oq-oY9" firstAttribute="centerX" secondItem="ofi-GU-dag" secondAttribute="centerX" id="oCy-N2-MOx"/>
                             <constraint firstItem="Fut-QF-dlC" firstAttribute="top" secondItem="cay-Wp-2Gj" secondAttribute="bottom" constant="50" id="pm6-hc-E9p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xYi-Nx-oFv" secondAttribute="trailing" id="vB0-ar-Waj"/>
                             <constraint firstItem="yF9-kx-hi5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMU-nZ-KjP"/>
                             <constraint firstItem="5KS-iu-SGW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="xRF-pM-g3Y"/>
                             <constraint firstItem="cay-Wp-2Gj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="xSA-UA-1oW"/>
@@ -213,11 +225,33 @@
                         <outlet property="FixtureLabel3" destination="yF9-kx-hi5" id="gsE-pe-Gvv"/>
                         <outlet property="FixtureLabel4" destination="PKN-0K-w6S" id="2bg-t6-vkM"/>
                         <outlet property="FixtureLabel5" destination="tGq-Ru-5j1" id="cOZ-Ve-aeA"/>
+                        <segue destination="fvB-b6-yoq" kind="show" id="7mj-xw-gsF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="996" y="-568.06596701649175"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="SGE-C4-L8P">
+            <objects>
+                <viewController id="fvB-b6-yoq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z2g-J1-gv0"/>
+                        <viewControllerLayoutGuide type="bottom" id="zyE-JA-VVT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XNx-XL-cX0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqV-mH-Xxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-568"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="F19-1T-Eit"/>
+    </inferredMetricsTieBreakers>
 </document>
