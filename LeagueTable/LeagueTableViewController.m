@@ -65,7 +65,7 @@
         Teams *tempTeams = [self.data.teams objectAtIndex:indexPath.row];
         
         
-        cell.textLabel.text= [NSString stringWithFormat:@"%ld",tempTeams.rank];         // Displays the team rank in the textLabel
+        cell.textLabel.text= [NSString stringWithFormat:@"%d",tempTeams.points];         // Displays the team rank in the textLabel
         cell.detailTextLabel.text = tempTeams.name;                                     // Displays the team name in the detailTextLabel
         
         

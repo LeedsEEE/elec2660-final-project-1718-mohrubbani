@@ -41,204 +41,122 @@
         self.teams = [NSMutableArray array];
         Teams *AFCbournemouth = [[Teams alloc] init];
         AFCbournemouth.name = @"AFC Bournemouth";
-        AFCbournemouth.rank = 5;
-  /*      AFCbournemouth.wins =
-        AFCbournemouth.draws =
-        AFCbournemouth.losses =
-        AFCbournemouth.points =     */
+        AFCbournemouth.points = 15;
         
         self.teams = [NSMutableArray array];
         Teams *arsenal = [[Teams alloc] init];
         arsenal.name = @"Arsenal";
-        arsenal.rank = 2;
-   /*     arsenal.wins =
-        arsenal.draws =
-        arsenal.losses =
-        arsenal.points =            */
+        arsenal.points = 28;
         
         self.teams = [NSMutableArray array];
         Teams *brighton = [[Teams alloc] init];
         brighton.name=@"Brighton and Hove Albion";
-        brighton.rank = 3;
-   /*     brighton.wins =
-        brighton.draws =
-        brighton.losses =
-        brighton.points =           */
+        brighton.points = 17;
      
         self.teams = [NSMutableArray array];
         Teams *burnley = [[Teams alloc] init];
         burnley.name = @"Burnley";
-        burnley.rank = 4;
-   /*     burnley.wins =
-        burnley.draws =
-        burnley.losses =
-        burnley.points =            */
+        burnley.points = 25;
         
         self.teams = [NSMutableArray array];
         Teams *chelsea = [[Teams alloc] init];
         chelsea.name = @"Chelsea";
-        chelsea.rank = 7;
-   /*     chelsea.wins =
-        chelsea.draws =
-        chelsea.losses =
-        chelsea.points =            */
+        chelsea.points = 32;
         
         self.teams = [NSMutableArray array];
         Teams *palace = [[Teams alloc] init];
         palace.name = @"Crystal Palace";
-        palace.rank = 19;
-   /*     palace.wins =
-        palace.draws =
-        palace.losses =
-        palace.points =             */
+        palace.points = 10;
         
         self.teams = [NSMutableArray array];
         Teams *everton = [[Teams alloc] init];
         everton.name = @"Everton";
-        everton.rank = 15;
-   /*     everton.wins =
-        everton.draws =
-        everton.losses =
-        everton.points =            */
+        everton.points = 18;
         
         self.teams = [NSMutableArray array];
         Teams *huddersfield = [[Teams alloc] init];
         huddersfield.name = @"Huddersfield Town";
-        huddersfield.rank = 17;
-   /*     huddersfield.wins =
-        huddersfield.draws =
-        huddersfield.losses =
-        huddersfield.points =       */
+        huddersfield.points = 15;
         
         self.teams = [NSMutableArray array];
         Teams *leicester = [[Teams alloc] init];
         leicester.name = @"Leicester City";
-        leicester.rank = 11;
-   /*     leicester.wins =
-        leicester.draws =
-        leicester.losses =
-        leicester.points =          */
+        leicester.points = 20;
         
         self.teams = [NSMutableArray array];
         Teams *liverpool = [[Teams alloc] init];
         liverpool.name = @"Liverpool";
-        liverpool.rank = 8;
-   /*     liverpool.wins =
-        liverpool.draws =
-        liverpool.losses =
-        liverpool.points =          */
-        
+        liverpool.points = 29;
         self.teams = [NSMutableArray array];
         Teams *city = [[Teams alloc] init];
         city.name = @"Manchester City";
-        city.rank = 1;
-   /*     city.wins =
-        city.draws =
-        city.losses =
-        city.points =               */
+        city.points = 43;
         
         self.teams = [NSMutableArray array];
         Teams *united = [[Teams alloc] init];
         united.name = @"Manchester United";
-        united.rank = 6;
-   /*     united.wins =
-        united.draws =
-        united.losses =
-        united.points =             */
+        united.points = 35;
         
         self.teams = [NSMutableArray array];
         Teams *newcastle = [[Teams alloc] init];
         newcastle.name = @"Newcastle United";
-        newcastle.rank = 14;
-   /*     newcastle.wins =
-        newcastle.draws =
-        newcastle.losses =
-        newcastle.points =          */
+        newcastle.points = 15;
         
         self.teams = [NSMutableArray array];
         Teams *southampton = [[Teams alloc] init];
         southampton.name = @"Southampton";
-        southampton.rank = 16;
-   /*     southampton.wins =
-        southampton.draws =
-        southampton.losses =
-        southampton.points =        */
+        southampton.points = 17;
         
         self.teams = [NSMutableArray array];
         Teams *stoke = [[Teams alloc] init];
         stoke.name = @"Stoke City";
-        stoke.rank = 20;
-   /*     stoke.wins =
-        stoke.draws =
-        stoke.losses =
-        stoke.points =              */
+        stoke.points = 16;
         
         self.teams = [NSMutableArray array];
         Teams *swansea = [[Teams alloc] init];
         swansea.name = @"Swansea City";
-        swansea.rank = 12;
-   /*     swansea.wins =
-        swansea.draws =
-        swansea.losses =
-        swansea.points =            */
-        
+        swansea.points = 9;
         self.teams = [NSMutableArray array];
         Teams *tottenham = [[Teams alloc] init];
         tottenham.name = @"Tottenham Hotspur";
-        tottenham.rank = 10;
-   /*     tottenham.wins =
-        tottenham.draws =
-        tottenham.losses =
-        tottenham.points =          */
-        
+        tottenham.points = 25;
         self.teams = [NSMutableArray array];
         Teams *watford = [[Teams alloc] init];
         watford.name = @"Watford";
-        watford.rank = 9;
-   /*     watford.wins =
-        watford.draws =
-        watford.losses =
-        watford.points =            */
+        watford.points = 22;
         
         self.teams = [NSMutableArray array];
         Teams *westbrom = [[Teams alloc] init];
         westbrom.name = @"West Bromwich Albion";
-        westbrom.rank = 13;
-   /*     westbrom.wins =
-        westbrom.draws =
-        westbrom.losses =
-        westbrom.points =           */
+        westbrom.points = 13;
         
         self.teams = [NSMutableArray array];
         Teams *westham = [[Teams alloc] init];
         westham.name = @"West Ham United";
-        westham.rank = 18;
-   /*     westham.wins =
-        westham.draws =
-        westham.losses =
-        westham.points =            */
+        westham.points = 10;
         
         
-        [self.teams addObject:AFCbournemouth];
-        [self.teams addObject:arsenal];
-        [self.teams addObject:brighton];
-        [self.teams addObject:burnley];
-        [self.teams addObject:chelsea];
-        [self.teams addObject:palace];
-        [self.teams addObject:everton];
-        [self.teams addObject:huddersfield];
-        [self.teams addObject:leicester];
-        [self.teams addObject:liverpool];
+       
         [self.teams addObject:city];
         [self.teams addObject:united];
-        [self.teams addObject:newcastle];
-        [self.teams addObject:southampton];
-        [self.teams addObject:stoke];
-        [self.teams addObject:swansea];
+        [self.teams addObject:chelsea];
+        [self.teams addObject:liverpool];
+        [self.teams addObject:arsenal];
         [self.teams addObject:tottenham];
+        [self.teams addObject:burnley];
         [self.teams addObject:watford];
+        [self.teams addObject:leicester];
+        [self.teams addObject:everton];
+        [self.teams addObject:southampton];
+        [self.teams addObject:brighton];
+        [self.teams addObject:stoke];
+        [self.teams addObject:AFCbournemouth];
+        [self.teams addObject:newcastle];
+        [self.teams addObject:huddersfield];
         [self.teams addObject:westbrom];
+        [self.teams addObject:palace];
         [self.teams addObject:westham];
+        [self.teams addObject:swansea];
         
         
         
