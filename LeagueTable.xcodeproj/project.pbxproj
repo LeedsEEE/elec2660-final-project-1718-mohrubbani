@@ -21,6 +21,9 @@
 		F988CCBD1FD188DF00E28E20 /* second.m in Sources */ = {isa = PBXBuildFile; fileRef = F988CCBC1FD188DF00E28E20 /* second.m */; };
 		F99DAD671FD9611B00B54041 /* ButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DAD661FD9611B00B54041 /* ButtonHandler.m */; };
 		F99DAD6D1FD9697500B54041 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DAD6C1FD9697500B54041 /* thirdViewController.m */; };
+		F99DAD6F1FD9781400B54041 /* Top Scorer.png in Resources */ = {isa = PBXBuildFile; fileRef = F99DAD6E1FD9781400B54041 /* Top Scorer.png */; };
+		F99DAD711FD9790400B54041 /* Most Shots.png in Resources */ = {isa = PBXBuildFile; fileRef = F99DAD701FD9790400B54041 /* Most Shots.png */; };
+		F99DAD751FD97AEF00B54041 /* Most Assists.png in Resources */ = {isa = PBXBuildFile; fileRef = F99DAD741FD97AEF00B54041 /* Most Assists.png */; };
 		F9F974531FCF277B00979296 /* LiveFootballAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F974521FCF277B00979296 /* LiveFootballAPI.m */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		F99DAD661FD9611B00B54041 /* ButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonHandler.m; sourceTree = "<group>"; };
 		F99DAD6B1FD9697500B54041 /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = thirdViewController.h; path = ../thirdViewController.h; sourceTree = "<group>"; };
 		F99DAD6C1FD9697500B54041 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = thirdViewController.m; path = ../thirdViewController.m; sourceTree = "<group>"; };
+		F99DAD6E1FD9781400B54041 /* Top Scorer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Scorer.png"; sourceTree = "<group>"; };
+		F99DAD701FD9790400B54041 /* Most Shots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Most Shots.png"; sourceTree = "<group>"; };
+		F99DAD741FD97AEF00B54041 /* Most Assists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Most Assists.png"; sourceTree = "<group>"; };
 		F9F974511FCF277B00979296 /* LiveFootballAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveFootballAPI.h; sourceTree = "<group>"; };
 		F9F974521FCF277B00979296 /* LiveFootballAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveFootballAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +160,9 @@
 		F9100DF91FC47A7000259746 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F99DAD741FD97AEF00B54041 /* Most Assists.png */,
+				F99DAD701FD9790400B54041 /* Most Shots.png */,
+				F99DAD6E1FD9781400B54041 /* Top Scorer.png */,
 				F9100DFA1FC47A7000259746 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -292,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9100E091FC47A7000259746 /* LaunchScreen.storyboard in Resources */,
+				F99DAD751FD97AEF00B54041 /* Most Assists.png in Resources */,
+				F99DAD711FD9790400B54041 /* Most Shots.png in Resources */,
 				F9100E061FC47A7000259746 /* Assets.xcassets in Resources */,
 				F9100E041FC47A7000259746 /* Main.storyboard in Resources */,
+				F99DAD6F1FD9781400B54041 /* Top Scorer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,6 @@
 
 @interface ButtonHandler : NSObject
 
-@property (nonatomic, strong) UISegmentedControl *segmentControl;
+@property (nonatomic, strong) UISegmentedControl *segmentControl;       // Needed to implement the segment control
 
 @end

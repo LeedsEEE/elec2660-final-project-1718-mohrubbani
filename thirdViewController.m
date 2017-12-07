@@ -16,13 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeView1:) name:@"notifyButtonPressed0" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeView2:) name:@"notifyButtonPressed1" object:nil];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    [self changeView1:self];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeView1:) name:@"notifyButtonPressed0" object:nil];       // app is looking for when button0 is pressed
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeView2:) name:@"notifyButtonPressed1" object:nil];       // app is lookinf for when button1 is pressed
+ 
+    
+    [self changeView1:self];        // View1 shows as soon as view controller is selected
     
 }
 
@@ -42,8 +42,8 @@
     }
     
     _content = content;
-    [self addChildViewController:_content];
-    [_content didMoveToParentViewController:self];
+    [self addChildViewController:_content];             // ChildViewController is the viewcontroller that is shown when the segmented control is selected
+    [_content didMoveToParentViewController:self];      // ParentViewController is the main viewcontroller
     [self.view addSubview:_content.view];
     
     
@@ -59,9 +59,9 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"View1"];
     
-    NSLog(@"Button 1 pressed");
+    NSLog(@"Button 1 pressed");     // Shows when button is pressed (used when I was testing)
     
-    self.content = vc;
+    self.content = vc;              // Shows View1
     
     self.content.view.frame = CGRectMake(0, 65, 375, 550);      //Size of iPhone 6s screen - Was not sure how to make this adjustable depending on device
     
@@ -75,9 +75,9 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"View2"];
     
-    NSLog(@"Button 2 pressed");
+    NSLog(@"Button 2 pressed");     // Shows when button is pressed (used when I was testing)
     
-    self.content = vc;
+    self.content = vc;              // Shows View2
     
     self.content.view.frame = CGRectMake(0, 65, 375, 550);      //Size of iPhone 6s screen - Was not sure how to make this adjustable depending on device
     
@@ -85,7 +85,7 @@
 
 -(void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];     
 }
 
 

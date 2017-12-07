@@ -12,7 +12,7 @@
 
 - (IBAction)segmentChanged:(id)sender{
     
-    self.segmentControl = sender;
+    self.segmentControl = sender;       // Makes the segment control id 'sender'
     
     switch (self.segmentControl.selectedSegmentIndex) {
             
@@ -25,6 +25,6 @@
             break;
     }
     
-}
+}       // Only need two cases because segment control has two choices
 
 @end
