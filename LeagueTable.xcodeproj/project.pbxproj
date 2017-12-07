@@ -18,9 +18,13 @@
 		F9100E2E1FC47B2500259746 /* LeagueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E2D1FC47B2500259746 /* LeagueTableViewController.m */; };
 		F9100E311FC4867000259746 /* Teams.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E301FC4867000259746 /* Teams.m */; };
 		F9100E341FC4878500259746 /* LeagueTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9100E331FC4878500259746 /* LeagueTableDataModel.m */; };
+		F9249D601FD9D2210098CF4E /* Manchester_City_FC_badge-1.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F9249D5F1FD9D2210098CF4E /* Manchester_City_FC_badge-1.svg.png */; };
 		F944F64B1FD9C657009F7F0A /* Most Tackles.png in Resources */ = {isa = PBXBuildFile; fileRef = F944F64A1FD9C657009F7F0A /* Most Tackles.png */; };
 		F944F64F1FD9C703009F7F0A /* Most Clean Sheets.png in Resources */ = {isa = PBXBuildFile; fileRef = F944F64E1FD9C703009F7F0A /* Most Clean Sheets.png */; };
 		F944F6511FD9C755009F7F0A /* Most Saves.png in Resources */ = {isa = PBXBuildFile; fileRef = F944F6501FD9C755009F7F0A /* Most Saves.png */; };
+		F96873961FD9D66100CE4E70 /* 1200px-West_Ham_United_FC_logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F96873951FD9D66100CE4E70 /* 1200px-West_Ham_United_FC_logo.svg.png */; };
+		F96873981FD9D77E00CE4E70 /* premier-league-new-logo-D22A0CE87E-seeklogo.com.png in Resources */ = {isa = PBXBuildFile; fileRef = F96873971FD9D77E00CE4E70 /* premier-league-new-logo-D22A0CE87E-seeklogo.com.png */; };
+		F968739A1FD9D7D800CE4E70 /* premier-league-logo-header.png in Resources */ = {isa = PBXBuildFile; fileRef = F96873991FD9D7D800CE4E70 /* premier-league-logo-header.png */; };
 		F99DAD671FD9611B00B54041 /* ButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DAD661FD9611B00B54041 /* ButtonHandler.m */; };
 		F99DAD6D1FD9697500B54041 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99DAD6C1FD9697500B54041 /* thirdViewController.m */; };
 		F99DAD6F1FD9781400B54041 /* Top Scorer.png in Resources */ = {isa = PBXBuildFile; fileRef = F99DAD6E1FD9781400B54041 /* Top Scorer.png */; };
@@ -71,9 +75,13 @@
 		F9100E301FC4867000259746 /* Teams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teams.m; sourceTree = "<group>"; };
 		F9100E321FC4878500259746 /* LeagueTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueTableDataModel.h; sourceTree = "<group>"; };
 		F9100E331FC4878500259746 /* LeagueTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueTableDataModel.m; sourceTree = "<group>"; };
+		F9249D5F1FD9D2210098CF4E /* Manchester_City_FC_badge-1.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manchester_City_FC_badge-1.svg.png"; sourceTree = "<group>"; };
 		F944F64A1FD9C657009F7F0A /* Most Tackles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Most Tackles.png"; sourceTree = "<group>"; };
 		F944F64E1FD9C703009F7F0A /* Most Clean Sheets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Most Clean Sheets.png"; sourceTree = "<group>"; };
 		F944F6501FD9C755009F7F0A /* Most Saves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Most Saves.png"; sourceTree = "<group>"; };
+		F96873951FD9D66100CE4E70 /* 1200px-West_Ham_United_FC_logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1200px-West_Ham_United_FC_logo.svg.png"; sourceTree = "<group>"; };
+		F96873971FD9D77E00CE4E70 /* premier-league-new-logo-D22A0CE87E-seeklogo.com.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "premier-league-new-logo-D22A0CE87E-seeklogo.com.png"; sourceTree = "<group>"; };
+		F96873991FD9D7D800CE4E70 /* premier-league-logo-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "premier-league-logo-header.png"; sourceTree = "<group>"; };
 		F98702751FD5CD2200CAEDCA /* unirest-obj-c-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "unirest-obj-c-master"; sourceTree = "<group>"; };
 		F99DAD651FD9611B00B54041 /* ButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonHandler.h; sourceTree = "<group>"; };
 		F99DAD661FD9611B00B54041 /* ButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonHandler.m; sourceTree = "<group>"; };
@@ -168,6 +176,10 @@
 		F9100DF91FC47A7000259746 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F96873991FD9D7D800CE4E70 /* premier-league-logo-header.png */,
+				F96873971FD9D77E00CE4E70 /* premier-league-new-logo-D22A0CE87E-seeklogo.com.png */,
+				F96873951FD9D66100CE4E70 /* 1200px-West_Ham_United_FC_logo.svg.png */,
+				F9249D5F1FD9D2210098CF4E /* Manchester_City_FC_badge-1.svg.png */,
 				F944F6501FD9C755009F7F0A /* Most Saves.png */,
 				F944F64E1FD9C703009F7F0A /* Most Clean Sheets.png */,
 				F944F64A1FD9C657009F7F0A /* Most Tackles.png */,
@@ -312,10 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96873981FD9D77E00CE4E70 /* premier-league-new-logo-D22A0CE87E-seeklogo.com.png in Resources */,
+				F968739A1FD9D7D800CE4E70 /* premier-league-logo-header.png in Resources */,
 				F9100E091FC47A7000259746 /* LaunchScreen.storyboard in Resources */,
 				F99DAD751FD97AEF00B54041 /* Most Assists.png in Resources */,
 				F99DAD711FD9790400B54041 /* Most Shots.png in Resources */,
+				F96873961FD9D66100CE4E70 /* 1200px-West_Ham_United_FC_logo.svg.png in Resources */,
 				F944F64B1FD9C657009F7F0A /* Most Tackles.png in Resources */,
+				F9249D601FD9D2210098CF4E /* Manchester_City_FC_badge-1.svg.png in Resources */,
 				F9CE7BF81FD9AE7400E589CC /* Formation background.jpg in Resources */,
 				F9100E061FC47A7000259746 /* Assets.xcassets in Resources */,
 				F944F6511FD9C755009F7F0A /* Most Saves.png in Resources */,
