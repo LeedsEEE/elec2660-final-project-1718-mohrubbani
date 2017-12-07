@@ -1,22 +1,24 @@
 //
-//  second.m
+//  secondViewController.m
 //  LeagueTable
 //
-//  Created by Syed Rubbani [el16smr] on 01/12/2017.
+//  Created by Syed Rubbani [el16smr] on 07/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "second.h"
+#import "secondViewController.h"
 
-@interface second ()
+@interface secondViewController ()
 
 @end
 
-@implementation second
+@implementation secondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
