@@ -17,20 +17,20 @@
     if (self) {
         
         
-        LiveFootballAPI *liveData = [[LiveFootballAPI alloc] init];
+        LiveFootballAPI *liveData = [[LiveFootballAPI alloc] init];     // Initialises my football API
         [liveData GetLiveData];
         while([liveData teamData] == NULL){
             
         }
-//        NSLog(@"DATA FOUND: %@", [liveData teamData]);
+
         NSDictionary *data = [liveData teamData];
-        NSArray *records = [data objectForKey:@"records"];
+        NSArray *records = [data objectForKey:@"records"];      // Only gets information under the records header on the website
         
-     //   [records objectAtIndex:<#(NSUInteger)#>]
+    
         
         for(NSDictionary *d in records){
             
-            NSLog(@"RECORDS OF: %@, WITH POINTS %@", [d objectForKey:@"team"], [d objectForKey:@"points"]);
+            NSLog(@"RECORDS OF: %@, WITH POINTS %@", [d objectForKey:@"team"], [d objectForKey:@"points"]);     // Prints the team name and number of points in the log to check whether the information is being updated
         }
     
         

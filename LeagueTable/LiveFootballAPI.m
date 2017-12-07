@@ -15,9 +15,9 @@
 
 -(void)GetLiveData{
 
-    NSDictionary *headers = @{@"X-Mashape-Key": @"01RQtmhf7Umshs9Uj3WtU1JSYfiVp1JpFRNjsn4cIknFGR1VGf", @"Accept": @"application/json"};
+    NSDictionary *headers = @{@"X-Mashape-Key": @"01RQtmhf7Umshs9Uj3WtU1JSYfiVp1JpFRNjsn4cIknFGR1VGf", @"Accept": @"application/json"};     // Needed my specific key given by the API service provider in order to access the football data
     
-    NSURL *url = [NSURL URLWithString:@"https://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table"];
+    NSURL *url = [NSURL URLWithString:@"https://heisenbug-premier-league-live-scores-v1.p.mashape.com/api/premierleague/table"];        // Gets the information from this URL
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     [request setHTTPMethod:@"GET"];
@@ -32,12 +32,12 @@
         {
             NSError *parseError = nil;
             NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
-            //NSLog(@"The response is - %@",responseDictionary);
+          
             _teamData = responseDictionary;
         }
         else
         {
-            NSLog(@"Error");     
+            NSLog(@"Error");     // Added an NSLog to check whether my application is receiving the correct information. Easy way to debug issues
         }
     }];
     [dataTask resume];

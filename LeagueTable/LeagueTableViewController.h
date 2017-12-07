@@ -12,7 +12,7 @@
 
 @interface LeagueTableViewController : UITableViewController
 
-@property (strong, nonatomic) LeagueTableDataModel *data;
+@property (strong, nonatomic) LeagueTableDataModel *data;       // Created my data model
 
 
 @end

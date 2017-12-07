@@ -17,36 +17,17 @@
 @implementation LeagueTableViewController
 
 
-- (IBAction)startEditing:(id)sender {
-    
-    self.editing = YES;
-    
-}
-
-- (IBAction)stopEditing:(id)sender {
-    
-    self.editing = NO;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    
   
-   
-    
-   
-
-    
-
-    
-    self.data = [[LeagueTableDataModel alloc] init];
+    self.data = [[LeagueTableDataModel alloc] init];        // Initialises my data model
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.rightBarButtonItem = self.editButtonItem;      // Gives user the ability to edit the table if they want. Decided to implement the edit function as a failsafe if the table is incorrect
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,32 +53,20 @@
         numberofRows = self.data.teams.count;
         
     }
-    return numberofRows;
+    return numberofRows;            // Returns the same number of rows as there are teams. Therefore the number of rows is not hardcoded into the application and could possibly work for different                 leagues with different numbers of teams.
     
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagueTableCell" forIndexPath:indexPath];
- /*
-    NSSortDescriptor *sortDescriptor;
-    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"rank"
-                                                 ascending:YES];
-    
-- (instancetype)initWithKey:("rank" *)key
-ascending:(BOOL)ascending;
-    
-    NSArray *sortedTeams = [Teams sortedArrayUsingDescriptors:@[sortDescriptor]];
-    
-    
-   */
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeagueTableCell" forIndexPath:indexPath];            // Puts information into table view cell which has an identifier    'LeagueTableCell'
+
     if (indexPath.section == 0) {
         Teams *tempTeams = [self.data.teams objectAtIndex:indexPath.row];
         
         
-        cell.textLabel.text= [NSString stringWithFormat:@"%ld",tempTeams.rank];
-        cell.detailTextLabel.text = tempTeams.name;
+        cell.textLabel.text= [NSString stringWithFormat:@"%ld",tempTeams.rank];         // Displays the team rank in the textLabel
+        cell.detailTextLabel.text = tempTeams.name;                                     // Displays the team name in the detailTextLabel
         
         
         
@@ -127,7 +96,7 @@ ascending:(BOOL)ascending;
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    return UITableViewCellEditingStyleNone;
+    return UITableViewCellEditingStyleNone;     // Gets rid of the delete function for tableview cells so that the user does not delete a team
     
 
 }
@@ -147,14 +116,14 @@ ascending:(BOOL)ascending;
 }
 
 
-
+// Gives the user the ability to reorder tableview rows
 
 -(BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
  
     return YES;
 }
 
-
+// Allows the tableview rows to be moved
 #pragma mark - Navigation
 
 /*
