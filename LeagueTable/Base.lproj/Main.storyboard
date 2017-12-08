@@ -285,11 +285,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fernandinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTj-Y6-VCP">
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYI-cp-ba0">
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -327,12 +322,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fernandinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTj-Y6-VCP">
+                                <frame key="frameInset" minX="131" minY="268" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39420741580000002" green="0.060708919280000002" blue="0.34974799509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.23195879999999999" green="0.65798909510000003" blue="0.79256395729999995" alpha="0.74983494719999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NTj-Y6-VCP" firstAttribute="centerX" secondItem="9QM-K8-wj5" secondAttribute="centerX" id="0fd-8W-cwH"/>
-                            <constraint firstItem="NTj-Y6-VCP" firstAttribute="leading" secondItem="XNx-XL-cX0" secondAttribute="leadingMargin" constant="121.5" id="257-wz-i4S"/>
                             <constraint firstItem="zyE-JA-VVT" firstAttribute="top" secondItem="Ilo-OC-7C0" secondAttribute="bottom" constant="201" id="3SX-FK-x7d"/>
                             <constraint firstItem="was-vM-EJU" firstAttribute="centerX" secondItem="XNx-XL-cX0" secondAttribute="centerX" id="6me-4c-khw"/>
                             <constraint firstItem="Yo6-69-k9p" firstAttribute="top" secondItem="Z2g-J1-gv0" secondAttribute="bottom" constant="259" id="7h4-xa-e7g"/>

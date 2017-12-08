@@ -126,10 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				F9100DF81FC47A7000259746 /* LeagueTable */,
-				F9100E121FC47A7100259746 /* LeagueTableTests */,
-				F9100E1D1FC47A7100259746 /* LeagueTableUITests */,
-				F9100DF71FC47A7000259746 /* Products */,
-				F9EE1A211FD024BD00B5F502 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +137,7 @@
 				F9100E1A1FC47A7100259746 /* LeagueTableUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F9100DF81FC47A7000259746 /* LeagueTable */ = {
@@ -168,6 +165,10 @@
 				F9100E051FC47A7000259746 /* Assets.xcassets */,
 				F9100E071FC47A7000259746 /* LaunchScreen.storyboard */,
 				F9100E0A1FC47A7100259746 /* Info.plist */,
+				F9EE1A211FD024BD00B5F502 /* Frameworks */,
+				F9100DF71FC47A7000259746 /* Products */,
+				F9100E1D1FC47A7100259746 /* LeagueTableUITests */,
+				F9100E121FC47A7100259746 /* LeagueTableTests */,
 				F9100DF91FC47A7000259746 /* Supporting Files */,
 			);
 			path = LeagueTable;
@@ -199,7 +200,7 @@
 				F9100E151FC47A7100259746 /* Info.plist */,
 			);
 			path = LeagueTableTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		F9100E1D1FC47A7100259746 /* LeagueTableUITests */ = {
 			isa = PBXGroup;
@@ -208,7 +209,7 @@
 				F9100E201FC47A7100259746 /* Info.plist */,
 			);
 			path = LeagueTableUITests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		F9EE1A211FD024BD00B5F502 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -216,6 +217,7 @@
 				F98702751FD5CD2200CAEDCA /* unirest-obj-c-master */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
