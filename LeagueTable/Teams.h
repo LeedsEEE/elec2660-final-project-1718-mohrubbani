@@ -10,11 +10,9 @@
 
 @interface Teams : NSObject
 
-@property NSInteger *rank;
+
 @property (nonatomic, strong) NSString *name;
-@property NSInteger *wins;
-@property NSInteger *draws;
-@property NSInteger *losses;
+
 @property NSInteger *points;
 
 

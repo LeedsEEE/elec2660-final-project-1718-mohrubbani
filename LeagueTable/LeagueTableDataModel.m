@@ -38,7 +38,7 @@
         
         
         
-        self.teams = [NSMutableArray array];
+        self.teams = [NSMutableArray array];                //Created built in values for teams so that the table can be updated manually if the API fails to recall the data
         Teams *AFCbournemouth = [[Teams alloc] init];
         AFCbournemouth.name = @"AFC Bournemouth";
         AFCbournemouth.points = 15;
@@ -158,7 +158,7 @@
         [self.teams addObject:westham];
         [self.teams addObject:swansea];
         
-        
+        // Added the teams to my table view in descending order sorted by points
         
     }
     

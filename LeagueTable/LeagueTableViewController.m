@@ -24,11 +24,8 @@
   
     self.data = [[LeagueTableDataModel alloc] init];        // Initialises my data model
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-     self.navigationItem.rightBarButtonItem = self.editButtonItem;      // Gives user the ability to edit the table if they want. Decided to implement the edit function as a failsafe if the table is incorrect
-}
+   
+     }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
